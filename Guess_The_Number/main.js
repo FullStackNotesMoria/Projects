@@ -29,7 +29,6 @@ button.addEventListener("click", () => {
     }
     input.focus();
     input.value = "";
-    // input.focus();
   } else if (counter == 0) {
   }
 });
