@@ -20,7 +20,7 @@ input{
     border:none;
 }
 button{
-    background-color: blue;
+    background-color: rgb(84, 84, 231);
     color: white;
     border:none;
     border-radius: 5px;
@@ -29,7 +29,7 @@ button{
 
 img{
     width: 20%;
-    margin-top: 50px;
+    margin-top: 51px;
 }
 
 h2{
