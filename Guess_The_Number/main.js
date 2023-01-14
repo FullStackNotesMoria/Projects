@@ -22,22 +22,24 @@ button.addEventListener("click", () => {
       span.innerText = `congratulations,you entered ${
         5 - counter
       } the correct number ${input.value}`;
+      document.getElementById("img").src = "./images/Animation-para.gif";
+      img.style.width = "800px";
+      window.setTimeout(function () {
+        location.reload(true);
+      }, 3000);
     }
     input.focus();
     input.value = "";
   } else if (counter == 0) {
     p.innerText = `Game Over`;
     document.getElementById("img").src = "./images/Animation.gif";
-    window.setTimeout(
-        function(){
-          location.reload(true)
-        },
-        3000
-      );
+    img.style.width = "800px";
+    window.setTimeout(function () {
+      location.reload(true);
+    }, 3000);
   }
 });
 
-
 window.addEventListener("load", () => {
-      input.focus();
-    });
+  input.focus();
+});
