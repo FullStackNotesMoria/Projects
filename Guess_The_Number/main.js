@@ -13,15 +13,9 @@ button.addEventListener("click", () => {
     if (number > input.value) {
       span.innerText = `guess the bigger number than ${input.value},number of attempts ${counter}`;
       counter--;
-      //   alert(`guess the bigger number ${counter} than ${input.value}`);
-      //   span == document.write(`${counter}`);
-      //   counter -= 1;
     } else if (number < input.value) {
       span.innerText = `guess the smaller number than ${input.value},number of attempts ${counter}`;
       counter--;
-      //   alert(`guess the smaller number${counter} than ${input.value}`);
-      //   span == document.write(`${counter}`);
-      //   counter-= 1;
     } else {
       span.innerText = `congratulations,you entered ${
         5 - counter
@@ -30,6 +24,8 @@ button.addEventListener("click", () => {
     input.focus();
     input.value = "";
   } else if (counter == 0) {
+    p.innerText = `Game Over`;
+    
   }
 });
 window.addEventListener("load", () => {
