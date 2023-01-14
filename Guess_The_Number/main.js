@@ -9,7 +9,7 @@ console.log(number);
 button.addEventListener("click", () => {
   console.log(input.value);
 
-  if (counter > 0) {
+  if (counter >= 0) {
     if (number > input.value) {
       span.innerText = `guess the bigger number than ${input.value},number of attempts ${counter}`;
       counter--;
