@@ -21,20 +21,15 @@ button.addEventListener("click", () => {
       counter--;
       //   alert(`guess the smaller number${counter} than ${input.value}`);
       //   span == document.write(`${counter}`);
-      //   counter -= 1;
+      //   counter-= 1;
     } else {
-        span.innerText = `congratulations,you entered ${5-counter} the correct number ${input.value}`;
-     
-    //   counter--;
-    //   alert(
-    //     ` congratulations,you entered${counter} the correct number ${input.value}`;
-    //   );
+      span.innerText = `congratulations,you entered ${
+        5 - counter
+      } the correct number ${input.value}`;
     }
     input.focus();
     input.value = "";
-    // input.focus();
-  }else if(counter==0){
-    
+  } else if (counter == 0) {
   }
 });
 window.addEventListener("load", () => {

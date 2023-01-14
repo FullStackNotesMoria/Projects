@@ -20,7 +20,7 @@ input{
     border:none;
 }
 button{
-    background-color: blue;
+    background-color: rgb(84, 84, 231);
     color: white;
     border:none;
     border-radius: 5px;
@@ -34,5 +34,4 @@ img{
 
 h2{
     margin-top: 40px;
-
 }
