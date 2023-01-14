@@ -21,7 +21,7 @@ button.addEventListener("click", () => {
       counter--;
       //   alert(`guess the smaller number${counter} than ${input.value}`);
       //   span == document.write(`${counter}`);
-      //   counter -= 1;
+      //   counter-= 1;
     } else {
       span.innerText = `congratulations,you entered ${
         5 - counter
