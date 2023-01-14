@@ -27,7 +27,7 @@ button.addEventListener("click", () => {
     input.value = "";
   } else if (counter == 0) {
     p.innerText = `Game Over`;
-    document.getElementById("img").src = "./images/game.png";
+    document.getElementById("img").src = "./images/Animation.gif";
     window.setTimeout(
         function(){
           location.reload(true)
