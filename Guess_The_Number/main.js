@@ -43,3 +43,9 @@ button.addEventListener("click", () => {
 window.addEventListener("load", () => {
   input.focus();
 });
+
+input.addEventListener("keydown", (event) => {
+  if (event.code === "Enter") {
+    button.click();
+  }
+});
