@@ -3,6 +3,8 @@ let button = document.getElementById(`btn`);
 let p = document.getElementById(`guess`);
 let number = Math.floor(Math.random() * 100);
 let span = document.getElementById(`span`);
+let img = document.getElementById(`img`);
+
 let counter = 4;
 console.log(number);
 
@@ -25,9 +27,17 @@ button.addEventListener("click", () => {
     input.value = "";
   } else if (counter == 0) {
     p.innerText = `Game Over`;
-    
+    document.getElementById("img").src = "./images/game.png";
+    window.setTimeout(
+        function(){
+          location.reload(true)
+        },
+        3000
+      );
   }
 });
+
+
 window.addEventListener("load", () => {
-  input.focus();
-});
+      input.focus();
+    });
