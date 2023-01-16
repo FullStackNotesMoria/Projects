@@ -18,7 +18,7 @@ button.addEventListener("click", () => {
     } else if (number < input.value) {
       span.innerText = `guess the smaller number than ${input.value},number of attempts ${counter}`;
       counter--;
-    } else {
+    } else if(number==input.value){
       span.innerText = `congratulations,you entered ${
         5 - counter
       } the correct number ${input.value}`;
@@ -27,6 +27,9 @@ button.addEventListener("click", () => {
       window.setTimeout(function () {
         location.reload(true);
       }, 3000);
+    }
+    else{
+      span.innerText = `${input.value} bu bir sayı degildir`
     }
     input.focus();
     input.value = "";
