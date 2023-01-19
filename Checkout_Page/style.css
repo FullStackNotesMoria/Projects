@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.conteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.conteiner_left{
+    width: 40%;
+    border: 1px solid red;
+}
+.conteiner_right{
+    width: 40%;
+    border: 1px solid red;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+h1{
+    text-align: center;
+}
+form input{
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    color: grey;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+form label{
+    color: gray;
+}
+#country{
+    border-radius: 5px;
+    height: 30px;
+    width: 120%;
+    border: 1px solid grey;
+}
+#postCode{
+    width: 100%;
+}
+.country-postcode{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.country, .postcode{
+    gap: 0.5rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:flex-start;
+    font-size: 0.8rem;
+}
+#checkbox{
+    width: 15px;
+    margin-right: 10px;
+    height: 10px;
+}
+
+
+
+
