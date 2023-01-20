@@ -10,17 +10,21 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 1rem;
     gap: 5%;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
 }
 .conteiner_left{
+    min-width: 300px;
+    max-width: 400px;
     width: 40%;
-    border: 1px solid red;
 }
 .conteiner_right{
+    background-color: #EFEFE7;
+    min-width: 300px;
+    max-width: 400px;
     width: 40%;
-    border: 1px solid red;
 }
 
 form{
@@ -76,6 +80,100 @@ form label{
     height: 10px;
 }
 
+.product{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    height: 150px;
+}
 
+.product .img img{
+    width:130px;
+    height: 150px;
+    border-radius: 5px;
+}
 
+.product_detail{
 
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    justify-content: flex-start;
+}
+.product_basket-num{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0.2rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 150px;
+    padding:0.1rem;
+}
+
+.btn_remove{
+    border-radius: 5px;
+    background-color: brown;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 20px;
+}
+
+.product_name a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.7);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.explain{
+    margin-top: 2rem;
+  }
+.div{
+    width: 80%;
+    margin: 0.5rem;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top:1px solid gray;
+}
+#sayi {
+    color: grey;
+    background-color: #EFEFE7;
+    border: none;
+    text-align: center;
+  }
+  
+  .negativeButton {
+    width: 20px;
+  }
+  
+  .plusButton {
+    width: 20px;
+  }
+  
+  .product_basket-num {
+    margin-top: 10px;
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+  }
+.btn_continue{
+    width: 100px;
+    margin: auto;
+}
+  .btn_continue input{
+    background-color: orange;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 1rem 0.8rem;
+  }
+
+ 
