@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Checkout</h1>
+    <!-- <h1>Checkout</h1>
     <div class="conteiner">
       <div class="conteiner_left">
         <form action="">
@@ -75,7 +75,7 @@
             <label for="">See this information next time</label>
           </div>
         </form>
-      </div>
+      </div> -->
       <div class="conteiner_right">
         <div class="product1 product">
           <div class="img">
@@ -85,33 +85,24 @@
             <p class="product_name"><a href="#">Vintage Backbag</a></p>
             <p class="product_currentPrice">
               <span>$</span>
-              <span class="product_currentPrice--">25.98</span>
+              <!-- <strong class="product_currentPrice--"> 25.98</strong> -->
+              <span class="product_currentPrice0 product_currentPrice "> 0 </span>
               <del>
                 <span>$</span>
                 <span>34.99</span>
               </del>
             </p>
             <div class="product_basket-num">
-              <input
-                type="button"
-                onclick="azalt()"
-                value="-"
-                class="negativeButton"
-              />
-              <input type="text" value="1" size="5" id="sayi" name="sayi" />
-              <input
-                type="button"
-                onclick="arttir()"
-                value="+"
-                class="plusButton"
-              />
+              <input type="button" value="-" class="negativeButton" />
+              <p class="urunMiktari0">1</p>
+              <input type="button" value="+" class="plusButton" />
             </div>
             <div class="remove">
               <button class="btn_remove">Remove</button>
             </div>
             <p>
               Product Total :$
-              <span class="product_totalPrice"></span>
+              <span class="product_totalPrice0"></span>
             </p>
           </div>
         </div>
@@ -123,33 +114,23 @@
             <p class="product_name"><a href="">Levi Shoes</a></p>
             <p class="product_currentPrice">
               <span>$</span>
-              <span class="product_currentPrice--">45.99</span>
+              <span class="product_currentPrice1 product_currentPrice ">0</span>
               <del>
                 <span>$</span>
                 <span>54.99</span>
               </del>
             </p>
             <div class="product_basket-num">
-                <input
-                type="button"
-                onclick="azalt()"
-                value="-"
-                class="negativeButton"
-              />
-              <input type="text" value="1" size="5" id="sayi" name="sayi" />
-              <input
-                type="button"
-                onclick="arttir()"
-                value="+"
-                class="plusButton"
-              />
+              <input type="button" value="-" class="negativeButton" />
+              <p class="urunMiktari1">1</p>
+              <input type="button" value="+" class="plusButton" />
             </div>
             <div class="remove">
               <button class="btn_remove">Remove</button>
             </div>
             <p>
               Product Total :$
-              <span class="product_totalPrice"></span>
+              <span class="product_totalPrice1"></span>
             </p>
           </div>
         </div>
@@ -161,33 +142,23 @@
             <p class="product_name"><a href="">Antique Clock</a></p>
             <p class="product_currentPrice">
               <span>$</span>
-              <span class="product_currentPrice--">74.99</span>
+              <span class="product_currentPrice2 product_currentPrice ">0</span>
               <del>
                 <span>$</span>
                 <span>94.99</span>
               </del>
             </p>
             <div class="product_basket-num">
-                <input
-                type="button"
-                onclick="azalt()"
-                value="-"
-                class="negativeButton"
-              />
-              <input type="text" value="1" size="5" id="sayi" name="sayi" />
-              <input
-                type="button"
-                onclick="arttir()"
-                value="+"
-                class="plusButton"
-              />
+              <input type="button" value="-" class="negativeButton" />
+              <p class="urunMiktari2">1</p>
+              <input type="button" value="+" class="plusButton" />
             </div>
             <div class="remove">
               <button class="btn_remove">Remove</button>
             </div>
             <p>
               Product Total :$
-              <span class="product_totalPrice"></span>
+              <span class="product_totalPrice2"></span>
             </p>
           </div>
         </div>
@@ -224,7 +195,8 @@
       </div>
     </div>
     <div class="btn_continue">
-        <input type="button" value="Continue">
+      <input type="button" value="Continue" />
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
