@@ -17,13 +17,13 @@ body{
 }
 .conteiner_left{
     min-width: 300px;
-    max-width: 400px;
+    max-width: 500px;
     width: 40%;
 }
 .conteiner_right{
     background-color: #EFEFE7;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 360px;
+    max-width: 420px;
     width: 40%;
 }
 
