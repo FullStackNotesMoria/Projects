@@ -1,0 +1,16 @@
+/****navbar********/
+
+.circle {
+  display: inline-block;
+  border: 1px solid red;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: auto;
+  background-color: #dc3545;
+  color: white;
+}
+.circle i {
+  position: relative;
+  top: 20px;
+}
