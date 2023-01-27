@@ -14,3 +14,8 @@
   position: relative;
   top: 20px;
 }
+
+.product-img{
+  object-fit:cover;
+  vertical-align: middle;
+}
