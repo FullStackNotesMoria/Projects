@@ -19,3 +19,48 @@
   object-fit:cover;
   vertical-align: middle;
 }
+
+#carouselExampleCaptions img{
+  height: calc( 100vh - 100px);
+  width: 100vw;
+  object-fit: cover;
+}
+.textbanner{
+  color: #dc3545;
+  font-weight:900;
+  text-shadow: 3px 1px rgba(0,0,0,0.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+
+.imgteacher img{
+  border: 2px solid gray;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  vertical-align: middle;
+
+}
+
+.socialicons {
+
+}
+.socialicons a{
+  color: white;
+}
+.socialicons i{
+  padding-top: 30%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  border-radius: 50%;
+}
+
+
+#brands img{
+  width: 121px;
+  height: 50px;
+}
