@@ -1,0 +1,9 @@
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2018/06/21/13/57/clouds-3488632_960_720.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first{
+    margin-top: 100px;
+    color: brown;
+}
