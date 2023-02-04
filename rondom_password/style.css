@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    bottom: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 48px;
+    
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: black;
+    background-image: url("./scrt.jpg");
+    background-position-y:-250px ;
+}
+
+.btn{
+    cursor: pointer;
+    background-color:forestgreen;
+    width: 550px;
+    height: 100px;
+    opacity: 0.6;
+    border-radius: 20px;
+    font-style: 24px;
+    font-weight: 700;
+}
+p{
+    color: red;
+}
