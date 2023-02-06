@@ -9,6 +9,7 @@ const digitalClock = () => {
     // let guun = now.toLocaleDateString().split("/")[1]
     let ay = now.toLocaleDateString().split("/")[0]
     // console.log(ay);
+    
     // let yil = now.toLocaleDateString().split("/")[2]
     // date.innerHTML = say(guun) + " " + say(ay) + ' ' + yil
     date.innerHTML = say(ay)
