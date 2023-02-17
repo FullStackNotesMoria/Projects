@@ -48,3 +48,4 @@ const sil=()=>{
   window.location.reload()
 }
 
+console.log(object);
