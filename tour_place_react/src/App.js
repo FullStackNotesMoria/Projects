@@ -1,9 +1,12 @@
+import Header from "./components/Header/Header";
+import Main from "./components/main/Main";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
     <>
-      hello
-      
+      <Navbar/>
+      <Main/>
     </>
   );
 }
