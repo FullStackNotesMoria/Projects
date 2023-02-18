@@ -4,9 +4,9 @@ import Card from "../Card/Card"
 const Main = ({data}) => {
 
   return (
-    <div className="container">
+    <div className="container-fluid">
       <h1 className="text-center">POPULAR TOUR PLACES</h1>
-      <div className="row gap-3 text-center ms-5">
+      <div className="row gap-3 text-center mesafe">
           {data.map((item)=>{
             const {id, title, desc, image} = item
             return(
