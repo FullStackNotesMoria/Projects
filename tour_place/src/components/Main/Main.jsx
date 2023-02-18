@@ -1,8 +1,20 @@
+import Card from "../Card/Card"
 
 
-const Main = () => {
+const Main = ({data}) => {
+
   return (
-    <div>Main</div>
+    <div>
+      <h1 className="text-center">POPULAR TOUR PLACES</h1>
+      {
+        data.map((item)=>{
+          const {id, title, desc, image} = item
+          return(
+            <Card key={id} title={title} desc={desc} img={image} />
+          )
+        })
+      }
+    </div>
   )
 }
 

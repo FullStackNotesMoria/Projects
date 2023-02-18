@@ -14,11 +14,11 @@ const Navbarx = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto m-auto text-light">
             <Nav.Link href="#home">ABOUT US</Nav.Link>
-            <Nav.Link href="#link">FOR YOU</Nav.Link>
-            <Nav.Link href="#link">SERVICES</Nav.Link>
-            <Nav.Link href="#link">BLOG</Nav.Link>
-            <Nav.Link href="#link">VLOG</Nav.Link>
-            <Nav.Link href="#link">CONTACT</Nav.Link>
+            <Nav.Link href="#link1">FOR YOU</Nav.Link>
+            <Nav.Link href="#link2">SERVICES</Nav.Link>
+            <Nav.Link href="#link3">BLOG</Nav.Link>
+            <Nav.Link href="#link4">VLOG</Nav.Link>
+            <Nav.Link href="#link5">CONTACT</Nav.Link>
             
           </Nav>
         </Navbar.Collapse>
