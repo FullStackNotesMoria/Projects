@@ -1,18 +1,30 @@
 import styled from "styled-components";
 
 const DivStyles = styled.div` 
-  object-fit:cover;
-  // weight:400px;
-  // height:80vh;
-  // overflow:hidden;
+  height:576px;
   margin-bottom:60px;
-  // background-repeat:no-repeat;
   border-radius:20px 20px 0 0;
   .card{
+    object-fit:cover;
     width:350px;
+    height:576px;
     img{
       width:348px;
       height:500px;
+    }
+    &:hover{
+      padding:20px 20px 0px 20px;
+    }
+    &:hover img{
+      width:308px;
+      height:480px;
+    }
+    .card-body{
+      bottom:0;
+      height:76px;
+      h3{
+        height:76px;
+      }
     }
   }
 `;
