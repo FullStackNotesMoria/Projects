@@ -1,10 +1,10 @@
 import Main from "./components/Main/Main";
 import Navbarx from "./components/Navbar/Navbar";
-import data from "./Data/data"
-
+import data from "./Data/data";
+import "./App.scss";
 
 function App() {
-  console.log(data);
+  // console.log(data);
   return (
     <>
       <Navbarx/>
