@@ -8,9 +8,10 @@ import "./App.scss"
 
 const DivStyles = styled.div` 
   background-image:url(${imgg});
-  // background-positionX: 150px;
-  background-repeat:repeat-y;
-  background-size:100vw;
+  // background-image:url("https://c4.wallpaperflare.com/wallpaper/596/179/749/basketball-4k-nba-michael-jordan-wallpaper-preview.jpg");
+  // background-position: -100px;
+  background-repeat:no-repeat;
+  background-size:cover;
   background-attachment: fixed;
 
 `;
