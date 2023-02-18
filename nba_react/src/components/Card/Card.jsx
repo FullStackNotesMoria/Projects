@@ -2,10 +2,13 @@ import styled from "styled-components";
 
 const DivStyles = styled.div` 
   height:576px;
-  margin-bottom:60px;
+  width:350px;
+  padding:0;
+  text-align:center;
+  // margin-right:0;
+  margin:60px 0 60px 40px;
   border-radius:20px 20px 0 0;
   .card{
-    object-fit:cover;
     width:350px;
     height:576px;
     img{
@@ -17,13 +20,13 @@ const DivStyles = styled.div`
     }
     &:hover img{
       width:308px;
-      height:480px;
+      height:500px;
     }
     .card-body{
       bottom:0;
       height:76px;
       h3{
-        height:76px;
+        // height:76px;
       }
     }
   }
@@ -33,7 +36,7 @@ const Card = ({name,img,statics}) => {
   return (
     <DivStyles className="col">
       <div className="card">
-        <img src={img} className="card-img-top" alt={name}/>
+        <img src={img} className="card-img-top object-fit-cover" alt={name}/>
         <div className="card-body">
           <h3>{name}</h3>
         </div>
