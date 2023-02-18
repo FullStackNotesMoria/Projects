@@ -4,16 +4,18 @@ import Card from "../Card/Card"
 const Main = ({data}) => {
 
   return (
-    <div>
+    <div className="container">
       <h1 className="text-center">POPULAR TOUR PLACES</h1>
-      {
-        data.map((item)=>{
-          const {id, title, desc, image} = item
-          return(
-            <Card key={id} title={title} desc={desc} img={image} />
-          )
-        })
-      }
+      <div className="row gap-3 text-center ms-5">
+          {data.map((item)=>{
+            const {id, title, desc, image} = item
+            return(
+              <Card key={id} title={title} desc={desc} img={image} className="col"/>
+              )
+            })
+          }
+
+      </div>
     </div>
   )
 }
