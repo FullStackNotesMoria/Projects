@@ -14,7 +14,7 @@ const PStyles = styled.div`
   }
   p{
     width:454px;
-    margin-left:28px;
+    margin-left:16px;
     font-size : 1.2rem;
     background-color: rgba(0,0,0,0.8);
     position : absolute;
