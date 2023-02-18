@@ -11,7 +11,7 @@ const data = [
   },
   {
     name: "Larry Bird",
-    img: "https://cdn.vox-cdn.com/thumbor/8yWTZWnt03DGQkU9ZVdGluZWqRM=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/23373244/147497571.jpg",
+    img: "https://www.gannett-cdn.com/presto/2021/06/30/PIND/4c8d3b5f-4f15-4a3b-81d8-6b929d95b91f-larrybird.jpeg?width=300&height=455&fit=crop&format=pjpg&auto=webp",
     statistics: [
       "21,791 points",
       "8,974 rebaunds",
@@ -111,7 +111,7 @@ const data = [
   },
   {
     name: "Charles Barkley",
-    img: "https://freshairarchive.org/sites/default/files/styles/square_800/public/2021-08/CharlesBarkley.jpg?itok=lkOGUQ2t",
+    img: "http://res.cloudinary.com/ybmedia/image/upload/c_crop,h_2000,w_1330,x_0,y_0/c_scale,f_auto,q_auto,w_700/v1/m/1/7/170254e5f61a9ce5ff77b80c824d97ba464aa254/rebounding-star-auburn.jpg",
     statistics: [
       "23,757 points",
       "12,546 rebaunds",

@@ -8,6 +8,7 @@ const DivStyles = styled.div`
     width:200px;
   }
   h1{
+    weight:50%;
     font-weight:700;
   }
   input{
@@ -16,7 +17,6 @@ const DivStyles = styled.div`
     height:40px;
     padding:10px;
     border: none;
-    
   }
 `;
 
