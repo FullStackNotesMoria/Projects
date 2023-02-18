@@ -31,12 +31,6 @@ const PStyles = styled.div`
 
   
 const Card = ({title,desc,img}) => {
-  // const kay = {
-  //   color:"white",
-  //   position:"absolute",
-
-  // };
-
   return (
     <div className="card text-bg-dark " style={{width: '32rem'}}>
         <div style={{fontSize:"2rem"}} className="card-header">{title}</div>
