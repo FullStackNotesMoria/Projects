@@ -1,10 +1,11 @@
 import Main from "./components/Main/Main";
-import Navbar from "./components/Navbar/Navbar";
+import Navbarx from "./components/Navbar/Navbar";
+
 
 function App() {
   return (
     <>
-      <Navbar/>
+      <Navbarx/>
       <Main/>
     </>
   );
