@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useState } from "react"
 
 const DivStyles = styled.div` 
   height:576px;
@@ -6,7 +7,7 @@ const DivStyles = styled.div`
   padding:0;
   text-align:center;
   // margin-right:0;
-  margin:60px 0 60px 40px;
+  margin:30px 0 60px 40px;
   border-radius:20px 20px 0 0;
   .card{
     width:350px;
@@ -33,10 +34,13 @@ const DivStyles = styled.div`
 `;
 
 const Card = ({name,img,statics}) => {
+  const info = ()=>{
+    
+  }
   return (
     <DivStyles className="col">
       <div className="card">
-        <img src={img} className="card-img-top object-fit-cover" alt={name}/>
+        <img onClick={info} src={img} className="card-img-top object-fit-cover" alt={name}/>
         <div className="card-body">
           <h3>{name}</h3>
         </div>
