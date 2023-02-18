@@ -38,8 +38,8 @@ const Card = ({title,desc,img}) => {
   // };
 
   return (
-    <div className="card text-bg-dark" style={{width: '32rem'}}>
-        <div className="card-header">{title}</div>
+    <div className="card text-bg-dark " style={{width: '32rem'}}>
+        <div style={{fontSize:"2rem"}} className="card-header">{title}</div>
         <PStyles className="card-body">
           <img src={img} alt="img" style={{width:"100%", height:"360px"}}/>
           <p>{desc}</p>
