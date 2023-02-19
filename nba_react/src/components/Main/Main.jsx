@@ -7,8 +7,6 @@ const DivStyles = styled.div`
   padding:30px 80px;
   margin:0 auto;
   border-radius:20px;
-  
-
 `;
 
 const Main = ({data}) => {
@@ -19,7 +17,6 @@ const Main = ({data}) => {
         {
           data.map((item)=>{
             const {name,img,statistics}=item
-            // console.log(statistics);
             return(
               <Card key={name} name={name} img={img} statistics={statistics}/>
               )
