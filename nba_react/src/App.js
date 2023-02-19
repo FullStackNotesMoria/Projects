@@ -3,7 +3,6 @@ import Main from "./components/Main/Main";
 import data from "./Data/data"
 import styled from "styled-components";
 import imgg from "./Data/nbaa.jpg"
-import "./App.scss"
 
 
 const DivStyles = styled.div` 
