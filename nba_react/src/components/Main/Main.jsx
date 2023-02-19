@@ -18,9 +18,10 @@ const Main = ({data}) => {
       <div className="row">
         {
           data.map((item)=>{
-            const {name,img,statics}=item
+            const {name,img,statistics}=item
+            // console.log(statistics);
             return(
-              <Card key={name} name={name} img={img} statics={statics}/>
+              <Card key={name} name={name} img={img} statistics={statistics}/>
               )
             })
         }

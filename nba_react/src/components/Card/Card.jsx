@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { useState } from "react"
+import {FaBasketballBall} from 'react-icons/fa';
 
 const DivStyles = styled.div` 
   height:576px;
@@ -23,6 +24,11 @@ const DivStyles = styled.div`
       width:308px;
       height:500px;
     }
+    .card2{
+      position:absolute;
+      weight:348px;
+      margin:auto;
+    }
     .card-body{
       bottom:0;
       height:76px;
@@ -33,14 +39,27 @@ const DivStyles = styled.div`
   }
 `;
 
-const Card = ({name,img,statics}) => {
+const Card = ({name,img,statistics}) => {
+
+  // console.log(statistics);
+  const [activeDiv ,setActiveDiv]= useState()
   const info = ()=>{
-    
+  
+  }
+
+  const divToggle = ()=>{
+    console.log("object");
   }
   return (
     <DivStyles className="col">
       <div className="card">
-        <img onClick={info} src={img} className="card-img-top object-fit-cover" alt={name}/>
+        <img onClick={info} src={img} className="card-img-top" alt={name}/>
+        <div className="card2 ">
+          <h4><FaBasketballBall size={22} color=" #d35400"/>{statistics[0]}</h4>
+          <h4><FaBasketballBall size={22} color=" #d35400"/>{statistics[1]}</h4>
+          <h4><FaBasketballBall size={22} color=" #d35400"/>{statistics[2]}</h4>
+          <h4><FaBasketballBall size={22} color=" #d35400"/>{statistics[3]}</h4>
+        </div>
         <div className="card-body">
           <h3>{name}</h3>
         </div>
