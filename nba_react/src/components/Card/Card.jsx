@@ -10,6 +10,7 @@ const DivStyles = styled.div`
   // margin-right:0;
   margin:30px 0 60px 40px;
   border-radius:20px 20px 0 0;
+  cursor:pointer;
   .card{
     width:350px;
     min-height:576px;
