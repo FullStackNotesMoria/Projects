@@ -10,7 +10,7 @@ const Main = ({data}) => {
         data.map((x,i)=>{
           return(
             x.Stok > 0 ?
-            <Card key={i} data={x}/> : console.log(x.UrunID,x.Stok))
+            <Card key={i} data={x}/> : null)
         })
       }
     </div>
