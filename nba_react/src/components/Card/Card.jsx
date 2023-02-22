@@ -51,10 +51,10 @@ const Card = ({name,img,statistics}) => {
 
   // console.log(statistics);
   const [activeDiv ,setActiveDiv]= useState(true)
-  
+  console.log(name,img,statistics);
   return (
     <DivStyles className="col" onClick={()=>setActiveDiv(!activeDiv)}>
-      <div className="card">
+      <div className="card" id={name.toUpperCase()}>
           {activeDiv && (
             <img src={img} className="card-img-top" alt={name}/>
             )
