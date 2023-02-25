@@ -1,13 +1,21 @@
+import { useState } from "react"
 import AddProduct from "../components/AddProduct"
+import Button from "../components/Button"
 import CardTotal from "../components/CardTotal"
 import ProductCard from "../components/ProductCard"
 
 
 const Main = ({data}) => {
+  const [button, setButton] = useState(false)
   return (
     <div className="container-fluid ">
+      <span onClick={(e)=>setButton(!button)}>
+        {button ? null : <Button/>}
+      </span>
       <div className="d-flex justify-content-center ">
-        <AddProduct className="w-50 m-3"/>
+        {
+          button ? (<AddProduct className="w-50 m-3"/>) : null
+        }
         <div className="w-50 m-3">
           <div>
               {data.map((item)=>{
