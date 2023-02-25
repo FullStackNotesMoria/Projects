@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaCartPlus } from "react-icons/fa";
 import Button2 from "./Button2";
 
-const AddProduct = ({ data }) => {
+const AddProduct = ({ data, getData }) => {
   console.log(data);
   const [button2, setButton2] = useState(true);
   const [productName, setProductName] = useState("");
@@ -34,6 +34,7 @@ const AddProduct = ({ data }) => {
     } catch (error) {
       console.log(error);
     }
+    getData()
   };
 
   return (

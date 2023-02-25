@@ -7,10 +7,10 @@ const App = () => {
   const BASE_URL = "https://63fa3d35897af748dccbb376.mockapi.io/example1"
   const getData = async () => {
     try {
-    const { data } = await axios(BASE_URL)
-    setData(data)
+      const { data } = await axios(BASE_URL)
+      setData(data)
     }catch (error) {
-    console.log(error)
+      console.log(error)
     }
   }
   useEffect(() => {

@@ -25,7 +25,7 @@ const Main = ({data}) => {
                 return (<ProductCard key={item.id} {...item}/>)
               })}
           </div>
-          <CardTotal />
+          <CardTotal data={data}/>
         </div>
       </div>
       
