@@ -1,8 +1,14 @@
+import ProductCard from "../components/ProductCard"
 
 
-const Main = () => {
+const Main = ({data}) => {
   return (
-    <div>Main</div>
+    <div>
+        {data.map((item)=>{
+          return (<ProductCard key={item.id} {...item}/>)
+      })}
+     
+    </div>
   )
 }
 

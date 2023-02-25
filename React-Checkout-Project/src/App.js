@@ -1,9 +1,13 @@
 import Main from "./pages/Main";
+import data from "./helper/data"
+import Header from "./components/Header";
 
 function App() {
+  console.log(data);
   return (
     <>
-      <Main/>
+      <Header/>
+      <Main data={data}/>
     </>
   );
 }
