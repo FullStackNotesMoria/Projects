@@ -7,7 +7,7 @@ import ProductCard from "../components/ProductCard"
 
 
 const Main = ({data}) => {
-  console.log(data);
+  // console.log(data);
   const [button, setButton] = useState(false)
 
   return(
@@ -17,7 +17,7 @@ const Main = ({data}) => {
       </span>
       <div className="d-flex justify-content-center ">
         {
-          button ? (<AddProduct className="w-50 m-3"/>) : null
+          button ? (<AddProduct data={data} className="w-50 m-3"/>) : null
         }
         <div className="w-50 m-3">
           <div>
