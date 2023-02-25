@@ -4,13 +4,13 @@ import { AiFillDelete, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
     const [count, setCount] = useState(1);
     return (
-        <div className="container d-flex w-50 border mt-3">
+        <div className="container d-flex w-50 border mt-3 shadow">
           <div className="img m-3">
             <img src={image} alt="" style={{ width: "250px" }} />
           </div>
-          <div className="">
+          <div className="w-75">
             <div className="items">
-                <h5>{name}</h5>
+                <h5 className="mt-2">{name}</h5>
                 <p>
                 <span className="text-warning fs-3">
                     ${(price * dampingRate).toFixed(2)} 
@@ -47,6 +47,7 @@ const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
                 </p>
                 </div>
             </div>
+            
         </div>
     );
   };
