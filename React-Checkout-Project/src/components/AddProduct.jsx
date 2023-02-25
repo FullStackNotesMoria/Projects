@@ -7,11 +7,12 @@ const AddProduct = ({ data }) => {
   console.log(data);
   const [button2, setButton2] = useState(true);
   const [productName, setProductName] = useState("");
-  const [productQuantity, setProductQuantity] = useState();
+  const [productQuantity, setProductQuantity] = useState('');
   const [productImage, setProductImage] = useState("");
-  const [productPrice, setProductPrice] = useState();
+  const [productPrice, setProductPrice] = useState('');
 
-  const handleSubmit = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault()
     const newProduct = {
       name: productName,
       amount: productQuantity,
@@ -22,8 +23,8 @@ const AddProduct = ({ data }) => {
     postData(newProduct);
     setProductImage("");
     setProductName("");
-    setProductPrice();
-    setProductQuantity();
+    setProductPrice('');
+    setProductQuantity('');
   };
 
   const BASE_URL = "https://63fa3d35897af748dccbb376.mockapi.io/example1";
@@ -33,11 +34,10 @@ const AddProduct = ({ data }) => {
     } catch (error) {
       console.log(error);
     }
-    
   };
 
   return (
-    <div>
+    <div onSubmit={handleSubmit}>
       <div onClick={(e) => setButton2(!button2)}>
         {button2 ? <Button2 /> : null}
       </div>
@@ -70,7 +70,7 @@ const AddProduct = ({ data }) => {
               className="form-control"
               id="exampleFormControlInput1"
               value={productQuantity}
-              onChange={(e) => setProductQuantity(e.target.value)}
+              onChange={(e) => setProductQuantity(Number(e.target.value))}
             />
           </div>
           <div>
