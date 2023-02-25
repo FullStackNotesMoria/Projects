@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { AiFillDelete, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
-const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
-    const [count, setCount] = useState(1);
+const ProductCard = ({id, name, image, price, dampingRate, amount }) => {
+    const [count, setCount] = useState(Number(`${amount}`));
+    
+
     return (
         <div className="d-flex w-100 border mt-3 shadow">
           <div className="img m-3 w-50 text-center pt-5">
@@ -43,7 +45,7 @@ const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
                 </div>
                 <div className="productTotal">
                 <p>
-                    Product Total:$<span>{price * dampingRate}</span>
+                    Product Total:$<span>{(count * price * dampingRate).toFixed(2)}</span>
                 </p>
                 </div>
             </div>

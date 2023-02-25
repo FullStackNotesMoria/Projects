@@ -1,4 +1,5 @@
-import { useState } from "react"
+import axios from "axios"
+import { useEffect, useState } from "react"
 import AddProduct from "../components/AddProduct"
 import Button from "../components/Button"
 import CardTotal from "../components/CardTotal"
@@ -6,8 +7,10 @@ import ProductCard from "../components/ProductCard"
 
 
 const Main = ({data}) => {
+  console.log(data);
   const [button, setButton] = useState(false)
-  return (
+
+  return(
     <div className="container-fluid ">
       <span onClick={(e)=>setButton(!button)}>
         {button ? null : <Button/>}
