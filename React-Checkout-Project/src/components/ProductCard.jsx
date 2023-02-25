@@ -4,11 +4,11 @@ import { AiFillDelete, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
     const [count, setCount] = useState(1);
     return (
-        <div className="container d-flex w-50 border mt-3 shadow">
-          <div className="img m-3">
-            <img src={image} alt="" style={{ width: "250px" }} />
+        <div className="d-flex w-100 border mt-3 shadow">
+          <div className="img m-3 w-50 text-center pt-5">
+            <img src={image} alt="" style={{ width: "80%" }} />
           </div>
-          <div className="w-75">
+          <div className="w-50 pt-3">
             <div className="items">
                 <h5 className="mt-2">{name}</h5>
                 <p>
