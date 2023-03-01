@@ -7,7 +7,7 @@ const App = () => {
   const BASE_URL = "https://63fa3d35897af748dccbb376.mockapi.io/example1"
   const getData = async () => {
     try {
-      const { data } = await axios(BASE_URL)
+      const { data } = await axios.get(BASE_URL)
       setData(data)
     }catch (error) {
       console.log(error)
@@ -19,7 +19,7 @@ const App = () => {
   // console.log(data)
   return (
     <>
-      <Header getData={getData}/>
+      <Header data={data} getData={getData}/>
       <Main data={data} getData={getData}/>
     </>
   );

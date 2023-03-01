@@ -35,6 +35,7 @@ const AddProduct = ({ data, getData }) => {
       console.log(error);
     }
     getData()
+    console.log(getData());
   };
 
   return (

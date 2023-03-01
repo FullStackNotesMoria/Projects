@@ -6,7 +6,7 @@ import CardTotal from "../components/CardTotal"
 import ProductCard from "../components/ProductCard"
 
 
-const Main = ({data}) => {
+const Main = ({data, getData}) => {
   // console.log(data);
   const [button, setButton] = useState(false)
 
@@ -17,15 +17,15 @@ const Main = ({data}) => {
       </span>
       <div className="d-flex justify-content-center ">
         {
-          button ? (<AddProduct data={data} className="w-50 m-3"/>) : null
+          button ? (<AddProduct data={data} getData={getData} className="w-50 m-3"/>) : null
         }
         <div className="w-50 m-3">
           <div>
               {data.map((item)=>{
-                return (<ProductCard key={item.id} {...item}/>)
+                return (<ProductCard key={item.id} {...item} getData={getData}/>)
               })}
           </div>
-          <CardTotal data={data}/>
+          <CardTotal data={data} getData={getData}/>
         </div>
       </div>
       
