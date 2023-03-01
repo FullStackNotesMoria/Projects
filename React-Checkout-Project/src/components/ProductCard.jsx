@@ -14,7 +14,7 @@ const ProductCard = ({
   const [count, setCount] = useState(amount);
 
   const deleteData = async (id) => {
-    const BASE_URL = "https://63fca5a78ef914c5559c2bf7.mockapi.io/pro";
+    const BASE_URL = "https://63fa3d35897af748dccbb376.mockapi.io/example1";
     try {
       await axios.delete(`${BASE_URL}/${id}`);
     } catch (error) {
@@ -24,7 +24,7 @@ const ProductCard = ({
   };
 
   const putData = async (id, count) => {
-    const BASE_URL = "https://63fca5a78ef914c5559c2bf7.mockapi.io/pro";
+    const BASE_URL = "https://63fa3d35897af748dccbb376.mockapi.io/example1";
     console.log(id, count);
     try {
       await axios.put(`${BASE_URL}/${id}`, {
